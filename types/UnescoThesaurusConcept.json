@@ -1,7 +1,7 @@
 {
   "pid": "0.SIMPLE/UNESCO_THESAURUS_CONCEPT",
   "name": "UNESCO Thesaurus Concept",
-  "description": "A concept defined in the UNESCO thesaurus",
+  "description": "A concept defined in the UNESCO thesaurus.",
   "validator": "SPARQL",
   "validatorEndpoint": "https://vocabularies.unesco.org/sparql",
   "validatorArguments": [
