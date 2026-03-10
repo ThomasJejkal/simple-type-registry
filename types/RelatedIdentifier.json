@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/RELATED_IDENTIFIER",
+  "name": "Related Identifier",
+  "description": "An related identifier according to DataCite 4.5",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/relatedIdentifier.json" 
+}

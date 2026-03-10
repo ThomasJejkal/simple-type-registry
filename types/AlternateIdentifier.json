@@ -1,7 +1,0 @@
-{
-  "pid": "0.SIMPLE/ALTERNATE_IDENTIFIER",
-  "name": "Alternate Identifier",
-  "description": "An alternate identifier according to DataCite 4.5",
-  "validator": "JSON",
-  "validatorInput": "schemas/json/AlternateIdentifier.json" 
-}
