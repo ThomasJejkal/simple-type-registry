@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GeoLocation",
+  "type": "object",
+  "oneOf": [
+    {
+      "title": "Place name",
+      "type": "object",
+      "required": [
+        "geoLocationPlace"
+      ],
+      "properties": {
+        "geoLocationPlace": {
+          "type": "string",
+          "title": "Place"
+        }
+      }
+    },
+    {
+      "title": "Point",
+      "type": "object",
+      "required": [
+        "geoLocationPoint"
+      ],
+      "properties": {
+        "geoLocationPoint": {
+          "type": "object",
+          "title": "Point",
+          "required": [
+            "pointLatitude",
+            "pointLongitude"
+          ],
+          "properties": {
+            "pointLatitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90,
+              "title": "Latitude"
+            },
+            "pointLongitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180,
+              "title": "Longitude"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Bounding Box",
+      "type": "object",
+      "required": [
+        "geoLocationBox"
+      ],
+      "properties": {
+        "geoLocationBox": {
+          "type": "object",
+          "title": "Bounding Box",
+          "required": [
+            "westBoundLongitude",
+            "eastBoundLongitude",
+            "southBoundLatitude",
+            "northBoundLatitude"
+          ],
+          "properties": {
+            "westBoundLongitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180,
+              "title": "West Longitude"
+            },
+            "eastBoundLongitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180,
+              "title": "East Longitude"
+            },
+            "southBoundLatitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90,
+              "title": "South Latitude"
+            },
+            "northBoundLatitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90,
+              "title": "North Latitude"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Polygon",
+      "type": "object",
+      "required": [
+        "geoLocationPolygon"
+      ],
+      "properties": {
+        "geoLocationPolygon": {
+          "type": "object",
+          "title": "Polygon",
+          "required": [
+            "polygonPoints"
+          ],
+          "properties": {
+            "polygonPoints": {
+              "type": "array",
+              "title": "Points",
+              "minItems": 3,
+              "items": {
+                "type": "object",
+                "required": [
+                  "pointLatitude",
+                  "pointLongitude"
+                ],
+                "properties": {
+                  "pointLatitude": {
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90,
+                    "title": "Latitude"
+                  },
+                  "pointLongitude": {
+                    "type": "number",
+                    "minimum": -180,
+                    "maximum": 180,
+                    "title": "Longitude"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
