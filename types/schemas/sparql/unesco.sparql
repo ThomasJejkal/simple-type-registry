@@ -1,0 +1,9 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?iri ?label WHERE {
+  ?iri a skos:Concept ;
+           (skos:prefLabel|skos:altLabel) ?label .
+  FILTER(LANGMATCHES(LANG(?label), "en"))
+  FILTER(CONTAINS(LCASE(?label), LCASE("${term}")))
+}
+LIMIT 20
