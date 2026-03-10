@@ -17,6 +17,6 @@
       "key": "stylesheet",
       "value": "/sparql-form/xsl/xml-to-html.xsl"
     }
-  ]
+  ],
   "validatorInput": "schemas/sparql/unesco.sparql" 
 }
