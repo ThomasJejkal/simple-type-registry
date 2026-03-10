@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ThomasJejkal/simple-type-registry/types/schemas/json/relatedIdentifier.json",
+  "title": "DataCite RelatedIdentifier (Schema 4.5)",
+  "type": "object",
+  "description": "Identifier of a resource related to the described resource.",
+  "required": [
+    "relatedIdentifier",
+    "relatedIdentifierType",
+    "relationType"
+  ],
+  "properties": {
+    "relatedIdentifier": {
+      "type": "string",
+      "description": "Globally unique identifier of the related resource."
+    },
+    "relatedIdentifierType": {
+      "type": "string",
+      "description": "Type of the related identifier.",
+      "enum": [
+        "ARK",
+        "arXiv",
+        "bibcode",
+        "DOI",
+        "EAN13",
+        "EISSN",
+        "Handle",
+        "IGSN",
+        "ISBN",
+        "ISSN",
+        "ISTC",
+        "LISSN",
+        "LSID",
+        "PMID",
+        "PURL",
+        "UPC",
+        "URL",
+        "URN",
+        "w3id"
+      ]
+    },
+    "relationType": {
+      "type": "string",
+      "description": "Relationship between the described resource (A) and the related resource (B).",
+      "enum": [
+        "IsCitedBy",
+        "Cites",
+        "IsSupplementTo",
+        "IsSupplementedBy",
+        "IsContinuedBy",
+        "Continues",
+        "Describes",
+        "IsDescribedBy",
+        "HasMetadata",
+        "IsMetadataFor",
+        "HasVersion",
+        "IsVersionOf",
+        "IsNewVersionOf",
+        "IsPreviousVersionOf",
+        "IsPartOf",
+        "HasPart",
+        "IsPublishedIn",
+        "IsReferencedBy",
+        "References",
+        "IsDocumentedBy",
+        "Documents",
+        "IsCompiledBy",
+        "Compiles",
+        "IsVariantFormOf",
+        "IsOriginalFormOf",
+        "IsIdenticalTo",
+        "IsReviewedBy",
+        "Reviews",
+        "IsDerivedFrom",
+        "IsSourceOf",
+        "IsRequiredBy",
+        "Requires",
+        "Obsoletes",
+        "IsObsoletedBy",
+        "IsCollectedBy",
+        "Collects"
+      ]
+    },
+    "relatedMetadataScheme": {
+      "type": "string",
+      "description": "Name of the metadata scheme used for the related resource."
+    },
+    "schemeURI": {
+      "type": "string",
+      "format": "uri",
+      "description": "URI of the related metadata scheme."
+    },
+    "schemeType": {
+      "type": "string",
+      "description": "Type of the metadata scheme (e.g., XSD, JSON, RDF)."
+    },
+    "resourceTypeGeneral": {
+      "type": "string",
+      "description": "General type of the related resource.",
+      "enum": [
+        "Audiovisual",
+        "Book",
+        "BookChapter",
+        "Collection",
+        "ComputationalNotebook",
+        "ConferencePaper",
+        "ConferenceProceeding",
+        "DataPaper",
+        "Dataset",
+        "Dissertation",
+        "Event",
+        "Image",
+        "Instrument",
+        "InteractiveResource",
+        "Journal",
+        "JournalArticle",
+        "Model",
+        "OutputManagementPlan",
+        "PeerReview",
+        "PhysicalObject",
+        "Preprint",
+        "Report",
+        "Service",
+        "Software",
+        "Sound",
+        "Standard",
+        "StudyRegistration",
+        "Text",
+        "Workflow",
+        "Other"
+      ]
+    }
+  },
+
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "relationType": {
+            "enum": ["HasMetadata", "IsMetadataFor"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "schemeURI": { "type": "string", "format": "uri" },
+          "schemeType": { "type": "string" }
+        }
+      },
+      "else": {
+        "not": {
+          "anyOf": [
+            { "required": ["schemeURI"] },
+            { "required": ["schemeType"] }
+          ]
+        }
+      }
+    }
+  ],
+
+  "additionalProperties": false
+}
