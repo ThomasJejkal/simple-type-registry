@@ -3,6 +3,20 @@
   "name": "UNESCO Thesaurus Concept",
   "description": "A concept defined in the UNESCO thesaurus",
   "validator": "SPARQL",
-  "validatorEndpoint": "http://vocabularies.unesco.org/thesaurus",
+  "validatorEndpoint": "https://vocabularies.unesco.org/sparql",
+  "validatorArguments": [
+    {
+      "key": "default-graph-uri",
+      "value": "http://vocabularies.unesco.org/thesaurus"
+    },
+    {
+      "key": "format",  
+      "value": "application/sparql-results+json"
+    },
+    {
+      "key": "stylesheet",
+      "value": "/sparql-form/xsl/xml-to-html.xsl"
+    }
+  ]
   "validatorInput": "schemas/sparql/unesco.sparql" 
 }
