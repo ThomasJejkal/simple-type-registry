@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "string",
+  "enum": [
+    "https://spdx.org/licenses/MIT.html",
+    "https://spdx.org/licenses/Apache-2.0.html",
+    "https://spdx.org/licenses/GPL-3.0.html",
+    "https://spdx.org/licenses/LGPL-3.0.html",
+    "https://spdx.org/licenses/BSD-3-Clause.html",
+    "https://spdx.org/licenses/BSD-2-Clause.html",
+    "https://spdx.org/licenses/ISC.html",
+    "https://spdx.org/licenses/CC-BY-4.0.html",
+    "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+    "https://spdx.org/licenses/Unlicense.html"
+  ]}

@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/README_LOCATION",
+  "name": "Readme Location",
+  "description": "The location of a software's readme file as URL.",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/url.json"
+}

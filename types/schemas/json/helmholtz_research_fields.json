@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "string",
+  "enum": [
+    "Aeronautics, Space, and Transport",
+    "Earth & Environment",
+    "Energy",
+    "Health",
+    "Information",
+    "Matter"
+  ]}

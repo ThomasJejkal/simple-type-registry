@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/SOFTWARE_LOCATION",
+  "name": "Software Location",
+  "description": "The location of a software object as URL, i.e., a software repository.",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/url.json"
+}

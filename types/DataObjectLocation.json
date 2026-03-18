@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/DATA_OBJECT_LOCATION",
+  "name": "Data Object Location",
+  "description": "The location of a data object as URL.",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/url.json"
+}

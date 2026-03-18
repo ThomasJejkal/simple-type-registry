@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/OWNER",
+  "name": "Owner",
+  "description": "The owner of a resource identified by ORCiD or ROR",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/owner.json"
+}
