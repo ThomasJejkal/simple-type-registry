@@ -2,6 +2,7 @@
   "pid": "0.SIMPLE/MIME_TYPE",
   "name": "MimeType",
   "description": "A list of commonly used mime types.",
+  "category": "/DataObject",
   "validator": "JSON",
   "validatorInput": "schemas/json/mime_type.json"
 }

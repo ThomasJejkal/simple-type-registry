@@ -2,6 +2,7 @@
   "pid": "0.SIMPLE/HELMHOLTZ_RESEARCH_FIELD",
   "name": "Helmholtz Research Field",
   "description": "Research fields of the Helmholtz Association.",
+  "category": "/Core",
   "validator": "JSON",
   "validatorInput": "schemas/json/helmholtz_research_fields.json"
 }

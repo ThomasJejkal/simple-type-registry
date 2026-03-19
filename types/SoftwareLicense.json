@@ -2,6 +2,6 @@
   "pid": "0.SIMPLE/SOFTWARE_LICENSE",
   "name": "Software License",
   "description": "An SPDX license url for a software object.",
-  "validator": "JSON",
+  "validator": "/Software",
   "validatorInput": "schemas/json/license.json"
 }

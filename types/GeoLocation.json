@@ -2,6 +2,7 @@
   "pid": "0.SIMPLE/GEO_LOCATION",
   "name": "Geo Location",
   "description": "A geo location according to DataCite 4.5",
+  "category": "/DataCite",
   "validator": "JSON",
   "validatorInput": "schemas/json/geoLocation.json" 
 }

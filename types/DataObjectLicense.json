@@ -2,6 +2,7 @@
   "pid": "0.SIMPLE/DATA_OBJECT_LICENSE",
   "name": "Data Object License",
   "description": "An SPDX license url for a data object.",
+  "category": "/Core",
   "validator": "JSON",
   "validatorInput": "schemas/json/license.json"
 }

@@ -2,6 +2,6 @@
   "pid": "0.SIMPLE/SOFTWARE_REPOSITORY_TYPE",
   "name": "Software Repository Location",
   "description": "The type of the software repository where software source code is located. While it is stored as plain string, it should contain values of a controlled list.",
-  "validator": "JSON",
+  "validator": "/Software",
   "validatorInput": "schemas/json/string.json"
 }
