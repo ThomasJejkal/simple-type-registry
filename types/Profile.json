@@ -2,6 +2,7 @@
   "pid": "0.SIMPLE/PROFILE",
   "name": "Profile",
   "description": "The identifier of a modular profile the FDO is implementing.",
-  "validator": "/Core",
+  "category": "/Core",
+  "validator": "JSON",
   "validatorInput": "schemas/json/profile_module.json"
 }
