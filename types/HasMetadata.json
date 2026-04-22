@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/HAS_METADATA",
+  "name": "Has Metadata",
+  "description": "A relational attribute to refer to another FAIR DO representing metadata for the current FAIR DO.",
+  "category": "/Relational",
+  "validator": "LINK"
+}
