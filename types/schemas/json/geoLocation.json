@@ -101,14 +101,14 @@
       "properties": {
         "geoLocationPolygon": {
           "type": "object",
-          "title": "Coordinates",
+          "title": "Polygon",
           "required": [
             "polygonPoints"
           ],
           "properties": {
             "polygonPoints": {
               "type": "array",
-              "title": "Points",
+              "title": "Coordinates",
               "minItems": 3,
               "items": {
                 "type": "object",
