@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/IS_PART_OF",
+  "name": "Is Part Of",
+  "description": "A relational attribute to state that the current FAIR DO is part of another FAIR DO, e.g., a collection or multipart dataset.",
+  "category": "/Relational",
+  "validator": "LINK"
+}
