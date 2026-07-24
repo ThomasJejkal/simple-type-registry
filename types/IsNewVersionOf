@@ -1,0 +1,7 @@
+{
+  "pid": "0.SIMPLE/IS_NEW_VERSION_OF",
+  "name": "Is New Version Of",
+  "description": "A relational attribute to state that the current FAIR DO is a newer version of another FAIR DO.",
+  "category": "/Relational",
+  "validator": "LINK"
+}
