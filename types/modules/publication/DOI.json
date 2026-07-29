@@ -1,0 +1,8 @@
+{
+  "pid": "0.SIMPLE/DOI",
+  "name": "DOI",
+  "description": "A digital object identifier (DOI).",
+  "category": "/Modules/Publication",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/doi.json"
+}

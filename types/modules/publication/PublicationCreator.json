@@ -1,0 +1,8 @@
+{
+  "pid": "0.SIMPLE/PUBLICATION_CREATOR",
+  "name": "Publication Creator",
+  "description": "The ORCiD of a creator of a publication.",
+  "category": "/Modules/Publication",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/orcid.json"
+}

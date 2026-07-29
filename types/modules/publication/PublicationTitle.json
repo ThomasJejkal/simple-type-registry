@@ -1,0 +1,8 @@
+{
+  "pid": "0.SIMPLE/PUBLICATION_TITLE",
+  "name": "Publication Title",
+  "description": "The title of a publication.",
+  "category": "/Modules/Publication",
+  "validator": "JSON",
+  "validatorInput": "schemas/json/string.json"
+}

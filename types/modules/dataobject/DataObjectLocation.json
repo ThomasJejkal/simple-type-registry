@@ -2,7 +2,7 @@
   "pid": "0.SIMPLE/DATA_OBJECT_LOCATION",
   "name": "Data Object Location",
   "description": "The location of a data object as URL.",
-  "category": "/Modules/Core",
+  "category": "/Modules/DataObject",
   "validator": "JSON",
   "validatorInput": "schemas/json/url.json"
 }
