@@ -1,7 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Owner",
+  "type": "object",
   "oneOf": [
-    { "$ref": "https://raw.githubusercontent.com/ThomasJejkal/simple-type-registry/main/types/schemas/json/ror.json" },
-    { "$ref": "https://raw.githubusercontent.com/ThomasJejkal/simple-type-registry/main/types/schemas/json/orcid.json" }
+    { 
+      "title": "ORCiD",
+      "$ref": "https://raw.githubusercontent.com/ThomasJejkal/simple-type-registry/main/types/schemas/json/ror.json" 
+    },
+    { 
+      "title": "ROR",
+      "$ref": "https://raw.githubusercontent.com/ThomasJejkal/simple-type-registry/main/types/schemas/json/orcid.json" 
+    }
   ]
 }
