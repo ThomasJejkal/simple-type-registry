@@ -4,5 +4,6 @@
   "enum": [
     "0.SIMPLE/CORE",
     "0.SIMPLE/DATA_OBJECT",
-    "0.SIMPLE/SOFTWARE"
+    "0.SIMPLE/SOFTWARE",
+    "0.SIMPLE/PUBLICATION"
   ]}
